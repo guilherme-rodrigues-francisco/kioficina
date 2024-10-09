@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: "Sofast";
+  font-family: "Sofast Italic";
   src: url(/fonts/sofast-racing-car/sofast-italic/Sofast-Italic.otf) format("opentype"),
     url(/fonts/sofast-racing-car/sofast-italic/Sofast-Italic.ttf) format("truetype"),
     url(/fonts/sofast-racing-car/sofast-italic/Sofast-Italic.woff) format("woff"),
@@ -46,16 +46,23 @@
 }
 
 :root {
+  --font-title: "PACE";
+  --font-title_italic: "PACE Italic";
+  --font-body: "Sofast";
+  --font-body_italic: "Sofast Italic";
   --primary-color: #ffff00;
+  --second-color: #FFC107;
+  --third-color: #D48201;
+  --primary_black-color: #4B4B4B;
+  --second_black-color: #383838;
+  --third_black-color: #212121;
+  --white-color: #fff;
 }
 
-a,
-p,
-h2,
-h3 {
+a, p, h2, h3 {
   color: #fff;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Roboto';
 }
 
 img {
@@ -124,15 +131,12 @@ header ul a {
 }
 
 .btnContato img {
-  background: var(--primary-color);
+  background: var(--third-color);
+  box-shadow: 0 0 0 5px rgba(212, 130, 1, 0.3), 0 0 0 10px rgba(212, 130, 1, 0.1);
   padding: 10px;
   border-radius: 50%;
-  transition: 0.3s;
 }
 
-.btnContato img:hover {
-  box-shadow: 0 0 0 8px rgb(132, 36, 0.3);
-}
 
 .btnContato a:hover {
   font-weight: bold;
@@ -146,7 +150,9 @@ header ul a {
   z-index: -1;
 }
 
-.banner img {
+/* BANNER _SLIDE */
+
+.banner__slide img {
   display: block;
 }
 
@@ -154,16 +160,17 @@ header ul a {
   position: absolute;
   width: 600px;
   top: 40%;
-  margin-left: 265px;
+  margin-left: 352px;
 }
 
 .banner__text h2 {
-  font-size: 2em;
   font-family: "PACE Italic";
+  font-size: 2em;
   line-height: 40px;
 }
 
 .banner__text p {
+  margin-top: 8px;
   font-family: 'Roboto';
   font-size: 1.13em;
   line-height: 26px;
@@ -172,4 +179,77 @@ header ul a {
 
 .banner__text a {
   margin-top: 30px;
+}
+
+.banner__slide .slick-next {
+  left: 94%;
+  top: 78%;
+}
+
+.banner .slick-prev {
+  left: 90%;
+  top: 78%;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 48px;
+}
+
+/* BANNER _INFO */
+
+.banner__info {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  top: 15%;
+}
+
+.banner__info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.banner__info span {
+  background-color: var(--third-color);
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(212, 130, 1, 0.3), 0 0 0 10px rgba(212, 130, 1, 0.1);
+}
+
+.banner__info h6 {
+  font-family: 'PACE';
+  font-size: 0.75em;
+}
+
+/* BANNER _SOCIAL */
+
+.banner__social {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130px;
+  gap: 24px;
+  top: 30%;
+}
+
+.banner__social .line {
+  background-color: var(--third-color);
+  width: 2px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.banner__social h6 {
+  font-family: var(--font-title_italic);
+  font-size: 0.75em;
+  color: var(--white-color);
+  transform: rotate(-90deg);
+  margin-top: 36px;
 }
