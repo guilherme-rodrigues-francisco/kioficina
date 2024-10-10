@@ -146,6 +146,7 @@ header ul a {
 
 .banner {
   width: 100%;
+  height: 100%;
   position: absolute;
   z-index: -1;
 }
@@ -186,15 +187,35 @@ header ul a {
   top: 78%;
 }
 
-.banner .slick-prev {
+.banner__slide .slick-prev {
   left: 90%;
   top: 78%;
   z-index: 1;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.banner__slide .slick-prev:before, .slick-next:before {
   font-size: 48px;
+  color: var(--primary-color);
+
+}
+
+.banner__slide .slick-dots {
+  z-index: 3;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  width: 10%;
+}
+
+.banner__slide .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 20px;
+}
+
+.banner__slide .slick-dots li.slick-active button::before {
+  opacity: .5;
+  color: var(--primary-color);
 }
 
 /* BANNER _INFO */
