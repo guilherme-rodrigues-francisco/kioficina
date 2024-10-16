@@ -570,3 +570,27 @@ p {
   background-size: cover;
   background-position: center;
 }
+
+/* TODO: FIM VIDEO */
+
+/* TODO: NUMBER */
+
+.number .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number__item h6 {
+  font-family: var(--font-title);
+  font-size: 3.5em;
+  color: var(--white-color);
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffff00;
+}
+
+.number__item p {
+  font-family: var(--font-title);
+  font-size: 1.2em;
+  
+}
