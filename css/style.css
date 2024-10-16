@@ -91,7 +91,7 @@ img {
   width: 100%;
 }
 
-.spacing__width--150 {
+.spacing {
   height: 150px;
 }
 
@@ -551,4 +551,22 @@ p {
   font-size: 0.875em;
   line-height: 20px;
   color: #e0e0e0;
+}
+
+/* TODO: FIM SERVICES */
+
+/* TODO: VIDEO */
+
+.video {
+  height: 500px;
+  width: 100%;
+}
+
+.video a {
+  background-image: url(/img/car_video_bg.jpg);
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
