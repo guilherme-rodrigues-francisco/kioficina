@@ -585,6 +585,7 @@ p {
   font-size: 3.5em;
   color: var(--white-color);
   text-align: center;
+  margin-bottom: 10px;
   color: transparent;
   -webkit-text-stroke: 1px #ffff00;
 }
@@ -592,5 +593,18 @@ p {
 .number__item p {
   font-family: var(--font-title);
   font-size: 1.2em;
-  
+}
+
+.autobrands h3 {
+  font-family: var(--font-title);
+  font-size: 2.5em;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.autobrands__slide img {
+  height: 60px;
+  max-width: 100px;
+  align-items: center;
 }
