@@ -63,6 +63,7 @@
   --third_black-color: #212121;
   --background-color: #101010;
   --white-color: #fff;
+  --grey-color: #e0e0e0;
 }
 
 body {
@@ -91,8 +92,12 @@ img {
   width: 100%;
 }
 
-.spacing {
+.spacing-150 {
   height: 150px;
+}
+
+.spacing-200 {
+  height: 200px;
 }
 
 .btn {
@@ -103,6 +108,41 @@ img {
   font-size: 20px;
   background: var(--primary-color);
   color: #111;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: 2.5em;
+  line-height: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.gradient {
+  position: absolute;
+  z-index: -1;
+  font-size: 4.75em;
+  margin-top: 10px;
+  font-family: var(--font-title);
+  background: linear-gradient(90deg, #a5a5a5, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text__body {
+  font-family: var(--font-body);
+  font-size: 0.875em;
+  line-height: 20px;
+}
+
+.link {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* TOPO */
@@ -550,7 +590,7 @@ p {
   font-family: var(--font-body);
   font-size: 0.875em;
   line-height: 20px;
-  color: #e0e0e0;
+  color: var(--grey-color);
 }
 
 /* TODO: FIM SERVICES */
@@ -638,9 +678,9 @@ p {
   background-color: #000;
   position: relative;
   z-index: -2;
- }
- 
- .clients__info {
+}
+
+.clients__info {
   max-height: 575px;
   max-width: 560px;
   display: flex;
@@ -648,13 +688,13 @@ p {
   justify-content: end;
   margin: 0 0 40px 40px;
   gap: 10px;
- }
+}
 
 .clients__info h4 {
   font-family: var(--font-title);
   font-size: 1.5em;
 }
- 
+
 .clients__info span {
   font-family: var(--font-body);
   color: var(--primary_black-color);
@@ -666,26 +706,26 @@ p {
   line-height: 28px;
 }
 
- .clients__image {
+.clients__image {
   max-width: 600px;
- }
- 
- .clients__photo {
- width: 600px;
- height: 625px;
- position: absolute;
- }
- 
- .clients__photo--bg {
+}
+
+.clients__photo {
+  width: 600px;
+  height: 625px;
+  position: absolute;
+}
+
+.clients__photo--bg {
   width: 600px;
   position: relative;
   z-index: -1;
   top: 100px;
- }
- 
- .team .container {
+}
+
+.team .container {
   display: flex;
- }
+}
 
 .team__text {
   max-width: 400px;
@@ -697,23 +737,14 @@ p {
   line-height: 48px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.team__text .gradient {
-  position: absolute;
-  z-index: -1;
-  font-size: 4.75em;
-  margin-top: 10px;
-  font-family: var(--font-title);
-  background: linear-gradient(90deg, #a5a5a5, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
 }
 
 .team__text p {
   font-family: var(--font-body);
   font-size: 0.875em;
   line-height: 20px;
+  margin-bottom: 50px;
 }
 
 .team__text a {
@@ -734,7 +765,7 @@ p {
   display: block;
   text-align: center;
   position: relative;
-  top: -10px;
+  top: -40px;
   background: black;
   width: 170px;
   padding: 20px;
@@ -743,12 +774,61 @@ p {
 
 .team__info a {
   font-family: var(--font-title);
-  font-size: .78em;
+  font-size: 0.78em;
   text-transform: uppercase;
 }
 
 .team__info p {
   font-family: var(--font-body);
-  font-size: .75em;
+  font-size: 0.75em;
   margin-top: 10px;
 }
+
+/* TODO: BLOG SECTION */
+
+/* BLOG _TEXT */
+
+.blog__text .gradient {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog__text .title,
+.text__body {
+  text-align: center;
+}
+
+/* BLOG _ITEM */
+
+.blog__item {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.blog__card {
+  max-width: 380px;
+  max-height: 450px;
+}
+
+.blog__info {
+  padding: 20px;
+}
+
+.blog__info .title,
+.link {
+  font-size: 1em;
+  line-height: 24px;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.blog__info span {
+  color: var(--grey-color);
+  font-family: var(--font-body);
+  font-size: .875em;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
