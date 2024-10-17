@@ -608,3 +608,78 @@ p {
   max-width: 100px;
   align-items: center;
 }
+
+.clients__title {
+  margin-bottom: 50px;
+}
+
+.clients__title h2 {
+  position: absolute;
+  z-index: -1;
+  font-size: 4.75em;
+  margin-top: 10px;
+  font-family: var(--font-title);
+  background: linear-gradient(90deg, #a5a5a5, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clients__title h3 {
+  font-family: var(--font-title);
+  font-size: 2.5em;
+  line-height: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.clients__card {
+  display: flex;
+  height: 625px;
+  background-color: #000;
+  position: relative;
+  z-index: -2;
+ }
+ 
+ .clients__info {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 0 40px 40px;
+  gap: 10px;
+ }
+
+.clients__info h4 {
+  font-family: var(--font-title);
+  font-size: 1.5em;
+}
+ 
+.clients__info span {
+  font-family: var(--font-body);
+  color: var(--primary_black-color);
+}
+
+.clients__info p {
+  font-family: var(--font-body);
+  font-size: 1.2em;
+  line-height: 28px;
+}
+
+ .clients__image {
+  max-width: 600px;
+ }
+ 
+ .clients__photo {
+ width: 600px;
+ height: 625px;
+ position: absolute;
+ }
+ 
+ .clients__photo--bg {
+  width: 600px;
+  position: relative;
+  z-index: -1;
+  top: 100px;
+ }
+ 
+ 
