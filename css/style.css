@@ -832,3 +832,70 @@ p {
   display: inline-block;
 }
 
+footer {
+  background-color: #000;
+  padding-top: 100px;
+}
+
+footer .line {
+  margin: 0;
+}
+
+.footer__logo {
+  display: block;
+  margin: 40px 0 20px 0;
+}
+
+.footer__item {
+  display: flex;
+  gap: 85px;
+  margin-bottom: 28px;
+}
+
+.footer__info {
+  width: 400px;
+}
+
+.footer__location li {
+  margin-bottom: 20px;
+}
+
+.footer__location a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__item .link {
+  color: var(--grey-color);
+  border: none;
+  font-size: .875em;
+}
+
+.footer__item h6 {
+  font-size: 1em;
+  line-height: 24px;
+  color: var(--white-color);
+}
+
+.footer__info .text__body {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+}
+
+.footer__copyright span {
+  color: var(--white-color);
+  font-size: .875em;
+  font-family: var(--font-body);
+}
+
+.footer__social {
+  display: flex;
+  gap: 14px;
+}
