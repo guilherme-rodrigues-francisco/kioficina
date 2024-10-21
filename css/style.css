@@ -649,6 +649,17 @@ p {
   align-items: center;
 }
 
+.clients {
+  position: relative;
+
+  .clients__bg {
+    position: absolute;
+    bottom: -60px;
+    right: 320px;
+    z-index: -1;
+  }
+}
+
 .clients__title {
   margin-bottom: 50px;
 }
@@ -667,61 +678,50 @@ p {
 .clients__title h3 {
   font-family: var(--font-title);
   font-size: 2.5em;
+  color: var(--primary-color);
   line-height: 48px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.clients__card {
-  display: flex;
-  height: 625px;
-  background-color: #000;
-  position: relative;
-  z-index: -2;
+.clients__box {
+  display: flex!important;
+  justify-content: space-between;
+
+  .clients__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .clients__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h5 {
+        font-family: var(--font-title);
+        color: var(--white-color);
+        font-size: 1.5em;
+        margin-bottom: 6px;
+
+      }
+
+      h6 {
+        font-family: var(--font-body);
+        color: var(--white-color);
+        font-size: 1.2em;
+      }
+      
+    }
+
+    p {
+      text-align: start;
+      font-size: 1em;
+    }
+  }
 }
 
-.clients__info {
-  max-height: 575px;
-  max-width: 560px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  margin: 0 0 40px 40px;
-  gap: 10px;
-}
-
-.clients__info h4 {
-  font-family: var(--font-title);
-  font-size: 1.5em;
-}
-
-.clients__info span {
-  font-family: var(--font-body);
-  color: var(--primary_black-color);
-}
-
-.clients__info p {
-  font-family: var(--font-body);
-  font-size: 1.2em;
-  line-height: 28px;
-}
-
-.clients__image {
-  max-width: 600px;
-}
-
-.clients__photo {
-  width: 600px;
-  height: 625px;
-  position: absolute;
-}
-
-.clients__photo--bg {
-  width: 600px;
-  position: relative;
-  z-index: -1;
-  top: 100px;
-}
 
 .team .container {
   display: flex;

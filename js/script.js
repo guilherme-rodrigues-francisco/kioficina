@@ -17,3 +17,15 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
       });
   });
+
+  
+  $(document).ready(function(){
+    $('.clients__slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        fade: true,
+        arrows: false,
+        autoplaySpeed: 2000,
+      });
+  });
